@@ -4,6 +4,8 @@
 
 ## Code Review
 ```
+git status
+```
 inline static double costFunction(void *ptr, const Eigen::VectorXd &x, Eigen::VectorXd &g)
         {
             PathSmoother* path_smoother = (PathSmoother*)ptr;
