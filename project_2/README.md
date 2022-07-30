@@ -4,8 +4,7 @@
 
 ## Code Review
 ```
-git status
-```
+// To calculate cost and gradient based on cubic spline and obstacle info.
 inline static double costFunction(void *ptr, const Eigen::VectorXd &x, Eigen::VectorXd &g)
         {
             PathSmoother* path_smoother = (PathSmoother*)ptr;
