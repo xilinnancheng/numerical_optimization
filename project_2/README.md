@@ -42,6 +42,66 @@ inline static double costFunction(void *ptr, const Eigen::VectorXd &x, Eigen::Ve
             return cost;
         }
 ```
+
+```
+    inline int line_search_lewisoverton(Eigen::VectorXd &x,
+                                        double &f,
+                                        Eigen::VectorXd &g,
+                                        double &stp,
+                                        const Eigen::VectorXd &s,
+                                        const Eigen::VectorXd &xp,
+                                        const Eigen::VectorXd &gp,
+                                        const double stpmin,
+                                        const double stpmax,
+                                        const callback_data_t &cd,
+                                        const lbfgs_parameter_t &param)
+    {
+        double upper_bound = std::numeric_limits<double>::max();
+        double lower_bound = 0.0;
+
+        double f_next = 0.0;
+        Eigen::VectorXd g_next = g;
+        int ls = 0;
+        f = cd.proc_evaluate(cd.instance, xp, g);
+        double slope = s.dot(gp);
+
+        while (1)
+        {
+            f_next = cd.proc_evaluate(cd.instance, xp + stp * s, g_next);
+            // armijo condition
+            // f(x_k) - f(x_k + alpha * d) >= -c1 * alpha * df(x_k)
+            if (f - f_next < -param.f_dec_coeff * stp * slope)
+            {
+                upper_bound = stp;
+            }
+            else if (s.dot(g_next) < param.s_curv_coeff * slope)
+            {
+                // weak wolfe condition
+                // d_t * d(x_k + alpha * d) >= c2 * d_t * df(x_k)
+                lower_bound = stp;
+            }
+            else
+            {
+                break;
+            }
+
+            if (upper_bound < std::numeric_limits<double>::max())
+            {
+                stp = 0.5 * (upper_bound + lower_bound);
+            }
+            else
+            {
+                stp = 2 * lower_bound;
+            }
+            ls++;
+        }
+
+        x = xp + stp * s;
+        g = g_next;
+        f = f_next;
+        return ls;
+    }
+```
 ## Experimental Result
 <img src=https://github.com/xilinnancheng/numerical_optimization/blob/main/project_2/lbfgs_1.png width = "600" height="400"/><br/>
 
