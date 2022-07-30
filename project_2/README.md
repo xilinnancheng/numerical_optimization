@@ -4,9 +4,7 @@
 
 ## Code Review
 ```
-    inline static double costFunction(void *ptr,
-                                          const Eigen::VectorXd &x,
-                                          Eigen::VectorXd &g)
+inline static double costFunction(void *ptr, const Eigen::VectorXd &x, Eigen::VectorXd &g)
         {
             PathSmoother* path_smoother = (PathSmoother*)ptr;
             // Cubic spline.
