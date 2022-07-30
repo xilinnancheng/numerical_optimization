@@ -1,5 +1,6 @@
 # Cubic Spline Optimization Using LBFGS
 ## Problem Description
+<img src=https://github.com/xilinnancheng/numerical_optimization/blob/main/project_2/problem_description.png width = "600" height="400"/><br/>
 
 ## Code Review
 
