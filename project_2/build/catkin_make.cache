@@ -1,0 +1,2 @@
+gcopter:map_gen/mockamap
+-DCATKIN_DEVEL_PREFIX=/home/hongrunchen/Downloads/numerical_optimization/project_2/devel -DCMAKE_INSTALL_PREFIX=/home/hongrunchen/Downloads/numerical_optimization/project_2/install -G Unix Makefiles

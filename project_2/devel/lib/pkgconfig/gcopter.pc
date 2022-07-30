@@ -1,0 +1,8 @@
+prefix=/home/hongrunchen/Downloads/numerical_optimization/project_2/devel
+
+Name: gcopter
+Description: Description of gcopter
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
