@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/devel -DCMAKE_INSTALL_PREFIX=/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/install -G Unix Makefiles

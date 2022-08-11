@@ -1,0 +1,3 @@
+/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/build/CMakeFiles/rebuild_cache.dir
+/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/build/CMakeFiles/edit_cache.dir
+/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/build/CMakeFiles/sdqp_example.dir
