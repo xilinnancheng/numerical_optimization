@@ -263,27 +263,6 @@ namespace lbfgs
                                         const callback_data_t &cd,
                                         const lbfgs_parameter_t &param)
     {
-        // x is the decision variable vector
-        // f is function value at x
-        // g is the gradient value at x
-        // stp is the initial stepsize for line search
-        // s is the search direction vector
-        // xp is the decision variable vector at the current iteration
-        // gp is the gradient vector at the current iteration
-        // stpmin is the minimum allowable stepsize
-        // stpmax is the maximum allowable stepsize
-        // the struct param contains all necessary parameters
-        // the cd contains all necessary callback function
-
-        // eg.             x = xp; f = cd.proc_evaluate(cd.instance, x, g);
-        // the above line assigns x with xp and computes the function and grad at x
-
-        // note the output x, f and g which satisfy the weak wolfe condition when the function returns
-
-        //////////////////////////// HOMEWORK 1 START ////////////////////////////
-
-        // PUT YOUR CODE FOR Lewis-Overton line search here
-
         double upper_bound = std::numeric_limits<double>::max();
         double lower_bound = 0.0;
 
@@ -328,7 +307,6 @@ namespace lbfgs
         g = g_next;
         f = f_next;
         return ls;
-        //////////////////////////// HOMEWORK 1 END ////////////////////////////
     }
 
     /**
