@@ -802,6 +802,10 @@ namespace mpc_car
 
         if (std::max(std::fabs(grad_.maxCoeff()), std::fabs(grad_.minCoeff())) < epsilon_prec || violation_infinity_norm < epsilon_cond)
         {
+<<<<<<< HEAD
+=======
+          std::cout << std::max(std::fabs(grad_.maxCoeff()), std::fabs(grad_.minCoeff())) << " " <<violation_infinity_norm << std::endl;
+>>>>>>> 016670bb39cc414f78aabf5e44fbcec04b0c9cfa
           std::cout << "Optimial cost: " << minObjective << std::endl;
           break;
         }
