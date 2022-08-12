@@ -1,8 +1,8 @@
-# Install script for directory: /home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/src
+# Install script for directory: /home/hongrunchen/Downloads/numerical_optimization/project_3/sdqp/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hongrunchen/Downloads/numerical_optimization/project_3/sdqp/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hongrunchen/Downloads/numerical_optimization/project_3/sdqp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

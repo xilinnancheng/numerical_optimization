@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/src/example/sdqp_example.cpp" "/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/build/CMakeFiles/sdqp_example.dir/example/sdqp_example.cpp.o"
+  "/home/hongrunchen/Downloads/numerical_optimization/project_3/sdqp/src/example/sdqp_example.cpp" "/home/hongrunchen/Downloads/numerical_optimization/project_3/sdqp/build/CMakeFiles/sdqp_example.dir/example/sdqp_example.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/src/include"
+  "/home/hongrunchen/Downloads/numerical_optimization/project_3/sdqp/src/include"
   "/usr/include/eigen3"
   )
 

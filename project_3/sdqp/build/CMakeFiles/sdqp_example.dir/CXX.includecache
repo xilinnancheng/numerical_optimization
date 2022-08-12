@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/src/example/sdqp_example.cpp
+/home/hongrunchen/Downloads/numerical_optimization/project_3/sdqp/src/example/sdqp_example.cpp
 iostream
 -
 sdqp/sdqp.hpp
-/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/src/example/sdqp/sdqp.hpp
+/home/hongrunchen/Downloads/numerical_optimization/project_3/sdqp/src/example/sdqp/sdqp.hpp
 
-/home/hongrunchen/Downloads/lec3_task2/lec_3_homework_part2_solution - repo/src/include/sdqp/sdqp.hpp
+/home/hongrunchen/Downloads/numerical_optimization/project_3/sdqp/src/include/sdqp/sdqp.hpp
 Eigen/Eigen
 -
 cmath
