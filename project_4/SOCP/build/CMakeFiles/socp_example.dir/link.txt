@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -O3 -Wall -fPIC  -rdynamic CMakeFiles/socp_example.dir/example/socp_example.cpp.o  -o socp_example 
