@@ -1,0 +1,3 @@
+/home/hongrunchen/Downloads/numerical_optimization/project_4/SOCP/build/CMakeFiles/rebuild_cache.dir
+/home/hongrunchen/Downloads/numerical_optimization/project_4/SOCP/build/CMakeFiles/edit_cache.dir
+/home/hongrunchen/Downloads/numerical_optimization/project_4/SOCP/build/CMakeFiles/socp_example.dir
