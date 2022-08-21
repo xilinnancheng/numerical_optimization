@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/hongrunchen/Downloads/numerical_optimization/project_4/SDQP_P/devel -DCMAKE_INSTALL_PREFIX=/home/hongrunchen/Downloads/numerical_optimization/project_4/SDQP_P/install -G Unix Makefiles
